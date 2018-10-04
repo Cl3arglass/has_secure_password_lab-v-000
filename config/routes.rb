@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   resources :users
   resources :sessions
+=======
+  resources :accounts
+>>>>>>> 581caf8075a2523468888b23229fc9185cb93d3a
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

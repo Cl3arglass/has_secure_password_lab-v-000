@@ -1,5 +1,5 @@
 require 'rails_helper'
-
+# rails g resource User name:string password_digest:string --no-test-framework
 RSpec.describe UsersController, type: :controller do
 
   let(:steven) {{name: 'Steven',
@@ -19,7 +19,7 @@ RSpec.describe UsersController, type: :controller do
 
     it "sets your password if the confirmation matches" do
       post :create, user: steven
-      expect(User.last.authenticate(steven[:password])).to eq(User.last) 
+      expect(User.last.authenticate(steven[:password])).to eq(User.last)
     end
 
     it "redirects you if your password and confirmation don't match" do
